@@ -1,0 +1,2 @@
+# QR Code UI
+This is an app that puts a [fyne](https://github.com/fyne-io/fyne) UI on the [yeqown/go-qrcode](https://github.com/yeqown/go-qrcode) library for creating QR codes. This is still very much a work in progress.
