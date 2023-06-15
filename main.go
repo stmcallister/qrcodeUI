@@ -16,8 +16,8 @@ import (
 
 func main() {
 	myApp := app.New()
-	myWindow := myApp.NewWindow("qrcodeUI")
-	myWindow.Resize(fyne.NewSize(300, 100))
+	formWindow := myApp.NewWindow("qrcodeUI")
+	formWindow.Resize(fyne.NewSize(300, 100))
 
 	strInput := widget.NewEntry()
 	strInput.SetPlaceHolder("Enter text to convert to QR Code...")
@@ -36,13 +36,15 @@ func main() {
 		}
 		createQrCode(imgName, strInput.Text)
 		image := canvas.NewImageFromFile("img/" + imgName)
-		myWindow.SetContent(image)
-		myWindow.Resize(fyne.NewSize(200, 200))
+		codeWindow := myApp.NewWindow("QR Code: " + strInput.Text)
+		codeWindow.SetContent(image)
+		codeWindow.Resize(fyne.NewSize(200, 200))
+		codeWindow.Show()
 		log.Println("Content was:", strInput.Text)
 	}))
 
-	myWindow.SetContent(content)
-	myWindow.ShowAndRun()
+	formWindow.SetContent(content)
+	formWindow.ShowAndRun()
 }
 
 func createQrCode(imgFileName, qrString string) {
