@@ -3,7 +3,13 @@ module github.com/stmcallister/qrcodeUI
 go 1.20
 
 require (
-	fyne.io/fyne/v2 v2.3.4 // indirect
+	fyne.io/fyne/v2 v2.3.4
+	github.com/yeqown/go-qrcode/v2 v2.2.1
+	github.com/yeqown/go-qrcode/writer/standard v1.2.1
+)
+
+require (
+	fyne.io/fyne v1.4.3 // indirect
 	fyne.io/systray v1.10.1-0.20230403195833-7dc3c09283d6 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fogleman/gg v1.3.0 // indirect
@@ -12,6 +18,7 @@ require (
 	github.com/fyne-io/gl-js v0.0.0-20220119005834-d2da28d9ccfe // indirect
 	github.com/fyne-io/glfw-js v0.0.0-20220120001248-ee7290d23504 // indirect
 	github.com/fyne-io/image v0.0.0-20220602074514-4956b0afb3d2 // indirect
+	github.com/fyne-io/mobile v0.1.2 // indirect
 	github.com/go-gl/gl v0.0.0-20211210172815-726fda9656d6 // indirect
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20221017161538-93cebf72946b // indirect
 	github.com/go-text/typesetting v0.0.0-20230405155246-bf9c697c6e16 // indirect
@@ -26,8 +33,6 @@ require (
 	github.com/srwiley/rasterx v0.0.0-20210519020934-456a8d69b780 // indirect
 	github.com/stretchr/testify v1.8.0 // indirect
 	github.com/tevino/abool v1.2.0 // indirect
-	github.com/yeqown/go-qrcode/v2 v2.2.1 // indirect
-	github.com/yeqown/go-qrcode/writer/standard v1.2.1 // indirect
 	github.com/yeqown/reedsolomon v1.0.0 // indirect
 	github.com/yuin/goldmark v1.4.13 // indirect
 	golang.org/x/image v0.3.0 // indirect

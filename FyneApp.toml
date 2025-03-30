@@ -1,0 +1,6 @@
+[Details]
+  Icon = "Icon.png"
+  Name = "QR Code UI"
+  ID = "github.com/stmcallister/qrcodeUI"
+  Version = "0.0.3"
+  Build = 5
